@@ -23,7 +23,7 @@
         v-show="!store.backgroundShow"
         @click="store.mobileOpenState = !store.mobileOpenState"
       >
-        <component :is="store.mobileOpenState ? CloseSmall : HamburgerButton" />
+        <component :is="store.mobileOpenState ? HamburgerButton : CloseSmall" />
       </Icon>
       <!-- 页脚 -->
       <Transition name="fade" mode="out-in">
